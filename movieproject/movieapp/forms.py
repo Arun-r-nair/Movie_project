@@ -1,0 +1,10 @@
+from django import forms
+
+from movieapp.models import movie
+
+
+class movieform(forms.ModelForm):
+    class Meta:
+        model=movie
+        fields=['name','desc','year','img']
+
